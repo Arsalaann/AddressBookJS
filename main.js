@@ -26,11 +26,22 @@ let contact2 = new Contact("Rsalan", "Khan", "abcd", "bhopal", "mpradesh", "4620
 let contact3 = new Contact("Salan", "Khan", "abcd", "bhopal", "mpradesh", "462038", "290923023", "abc@123.com");
 let wantedName="Rsalan";
 let AddressBook = [contact1, contact2, contact3];
+// AddressBook.find(contact=>{
+//     if(contact.firstName==wantedName){
+//         contact.firstName="Hello";
+//         return contact;
+//     }
+// });
+// for(let contact of AddressBook){
+//     console.log(contact.firstName);
+// }
+let ind=0;
 AddressBook.find(contact=>{
     if(contact.firstName==wantedName){
-        contact.firstName="Hello";
+        AddressBook.splice(ind,1);
         return contact;
     }
+    ind++;
 });
 for(let contact of AddressBook){
     console.log(contact.firstName);

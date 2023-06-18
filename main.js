@@ -22,3 +22,6 @@ class Contact {
     }
 }
 let contact1 = new Contact("Arsal", "khan", "abc", "bhopal", "mp", "462038", "290923023", "abc@123.com");
+let contact2 = new Contact("Arsal", "khan", "abc", "bhopal", "mp", "462038", "290923023", "abc@123.com");
+let contact3 = new Contact("Arsal", "khan", "abc", "bhopal", "mp", "462038", "290923023", "abc@123.com");
+let AddressBook = [contact1, contact2, contact3];
